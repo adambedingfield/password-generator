@@ -82,10 +82,10 @@ function generatePassword() {
   else if (includeSpecial) {
     selections = special;
   }
-  //blank array that determines length put in
+  //blank array that determines length put in by user
   var endResult = [];
 
-  //randomizes result
+  //randomizes result and changes length with push
   for (var i = 0; i < enter; i++) {
       var answers = selections[Math.floor(Math.random() * selections.length)];
       endResult.push(answers);
